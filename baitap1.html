@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Markmass = 78;
+        var Markhieght = 1.69;
+        var Johnmass = 92;
+        var Johnhieght = 1.95;
+
+        var BMI = (mass, hieght) => {
+            return mass / (hieght * hieght)
+        };
+        var markHigherBMI = false;
+
+        var MarkBMI = BMI(Markmass, Markhieght)
+        var JohnBMI = BMI(Johnmass, Johnhieght)
+
+        console.log('BMI mark =' + MarkBMI);
+        console.log('BMI john =' + JohnBMI);
+        console.log('BMI mark cao hon BMI john:' + markHigherBMI);
+    </script>
+</body>
+
+</html>
